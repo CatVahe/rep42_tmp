@@ -1,16 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   ft_print_alpahbet.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tumolabs <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/05 07:50:36 by tumolabs          #+#    #+#             */
-/*   Updated: 2022/10/05 07:50:46 by tumolabs         ###   ########.fr       */
+/*   Created: 2022/10/05 07:51:41 by tumolabs          #+#    #+#             */
+/*   Updated: 2022/10/05 08:01:34 by tumolabs         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-void ft_putchar(char c){
-    write(1, &c ,1);
-}
+void ft_print_numbers(void); 
+void ft_print_numbers(void)
+ {
+    char i = '0';
+    while(i <= '9')
+    {
+        write(1, &i, 1);
+        i++;
+    }
+ }
