@@ -53,6 +53,8 @@ int main(){
     int boardit = 0;
     while(boardit < 12){
         int it = 0;
+            printf("%d %d %d %d",  forcheck[boardit][0],  forcheck[boardit][1],  forcheck[boardit][2],  forcheck[boardit][3]);
+                                printf("\n");    
         while(it < 4){
             int itforVal = 0;
             while(itforVal < 24){
@@ -64,16 +66,19 @@ int main(){
                     board[it][3] = (allVar[itforVal][0]%10);
            
                     forcheck[boardit][it] = itforVal;
-                    printf("%d \n",  forcheck[boardit][it]);
+                  /*  printf("%d ",  forcheck[boardit][it]);*/
                     break;
                 }
+     
                 ++itforVal;
             }
-          printf("%d, %d, %d, %d", board[it][0], board[it][1], board[it][2], board[it][3]);
-                    printf("\n");    
+        /*  printf("%d, %d, %d, %d", board[it][0], board[it][1], board[it][2], board[it][3]);*/
+
             ++it;
+            
         }
         int k = 0;
+
         while(k < 4){
             int check = get_visibil(board[0][k], board[1][k], board[2][k], board[3][k]);
             int checkR = get_visibil(board[3][k], board[2][k], board[1][k], board[0][k]);
